@@ -10,4 +10,6 @@ RUN yum -y install java-11-openjdk-devel \
     export JAVA_LIBDIR=/usr/share/java && \
     export JNI_LIBDIR=/usr/lib/java && \
     export JVM_ROOT=/usr/lib/jvm && \
-    export JAVA_HOME=$JVM_ROOT/java
+    export JAVA_HOME=$JVM_ROOT/java && \
+    export PATH=$PATH:$JAVA_HOME/bin && \
+    export CLASSPATH=$JAVA_HOME/lib
